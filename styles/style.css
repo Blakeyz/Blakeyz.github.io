@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 * {
 	padding: 0;
 	margin: 0;
@@ -5,12 +6,16 @@
 	list-style: none;
 	text-decoration: none;
 }
+:root {
+	--boxgradient: linear-gradient(to top right, #000000c9, #666666c9);
+}
 html {
 	scroll-behavior: smooth;
 	overflow: hidden;
 }
 body {
-	font-family: "Raleway", sans-serif;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
 	height: 100vh;
 	color: white;
 }
@@ -58,11 +63,15 @@ body {
 }
 #CheckMore {
 	padding: 15px;
-	background: linear-gradient(to top right, #202020b4, #424242b6);
+	background: var(--boxgradient);
 	box-shadow: 0px 0px 20px 1px rgb(19, 19, 19);
 	color: white;
 	font-weight: bold;
 	font-size: 1.5rem;
+	transition: 0.3s all ease;
+}
+#CheckMore:hover {
+	transform: scale(1.1);
 }
 #section2 {
 	background: linear-gradient(#3189d1, #00727abd 75%), url(../imgs/s2bg.jpg);
@@ -85,6 +94,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 5vw;
+	padding: 42px 60px 2rem 60px;
 }
 .footer {
 	height: 7vh;
@@ -153,22 +163,20 @@ body {
 	text-align: center;
 	width: 100%;
 }
+.sidemenu,
+h2,
+h1,
+header {
+	font-family: "Raleway", sans-serif;
+}
 #facebook {
-	background: linear-gradient(
-		to top right,
-		rgba(1, 102, 225, 0.8),
-		rgba(23, 169, 253, 0.8)
-	);
+	background: var(--boxgradient);
 }
 #phone {
-	background: linear-gradient(to top right, #000000c9, #666666c9);
+	background: var(--boxgradient);
 }
 #email {
-	background: linear-gradient(
-		to top right,
-		hsla(251, 100%, 41%, 0.788),
-		hsla(251, 100%, 71%, 0.788)
-	);
+	background: var(--boxgradient);
 }
 @media only screen and (max-width: 768px) {
 	.footer {
@@ -190,6 +198,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+	.box {
+		padding: 0.2rem 0.6rem 0.6rem 0.6rem;
+	}
 	.section {
 		padding: 2rem 2rem;
 	}
@@ -216,18 +227,15 @@ body {
 	}
 	#section4 {
 		grid-template-columns: 1fr;
-		gap: 5vh 0vw;
+		gap: 5vw;
 	}
 	.boxwrap {
 		height: 100%;
 	}
 }
 @media only screen and (max-width: 425px) and (max-height: 675px) {
-	.box {
-		padding: 0.2rem 0.6rem 0.6rem 0.6rem;
-	}
 	#section4 {
 		grid-template-columns: 1fr;
-		gap: 3vh 0vw;
+		padding: 25px 55px 2rem 55px;
 	}
 }
