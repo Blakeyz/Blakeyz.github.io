@@ -66,6 +66,9 @@ body {
 }
 #section2 {
 	background: linear-gradient(#3189d1, #00727abd 75%), url(../imgs/s2bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 #section3 {
 	background-color: rgb(0, 106, 133);

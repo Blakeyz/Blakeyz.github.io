@@ -76,6 +76,10 @@
 	align-items: center;
 	justify-content: center;
 }
+.sidemenu header img {
+	height: 50px;
+	margin: 9px;
+}
 .sidemenu .sidemenu ul li {
 	text-decoration: none;
 }
