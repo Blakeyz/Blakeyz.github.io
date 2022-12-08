@@ -29,7 +29,7 @@ body {
 	font-family: raleway;
 }
 .galery {
-	height: calc(100vh - 50px);
+	height: calc(100vh - 40px);
 	background: linear-gradient(
 			hsla(184, 100%, 20%, 0.45),
 			hsla(184, 100%, 35%, 0.45)
@@ -76,7 +76,7 @@ body {
 	font-family: raleway;
 }
 .footer {
-	height: 50px;
+	height: 40px;
 	width: 100%;
 	background-color: hsl(240, 16%, 13%);
 	-webkit-box-shadow: 0px 0px 35px 3px rgba(19, 19, 26, 1);
@@ -85,7 +85,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 2vw;
+	font-size: 1em;
 }
 @media only screen and (max-width: 768px) {
 	.footer {
