@@ -11,16 +11,15 @@ body {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 	color: white;
-	overflow-y: scroll;
 }
 .content {
 	height: 100vh;
 }
 .galery {
-	height: calc(100vh - 105px);
+	height: calc(100vh - 98px);
 	background: linear-gradient(
-			hsla(184, 100%, 24%, 0.74),
-			hsla(184, 100%, 50%, 0.55)
+			hsla(184, 100%, 20%, 0.74),
+			hsla(184, 100%, 35%, 0.55)
 		),
 		url(../imgs/contact.jpg);
 	background-size: cover;
@@ -29,9 +28,12 @@ body {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	padding: 1vh 1vw;
-	gap: 8vh 4vw;
+	gap: 5vh 4vw;
 	z-index: -1;
 	overflow-y: scroll;
+}
+.galery::-webkit-scrollbar {
+	display: none;
 }
 .galerybox {
 	width: 100%;
@@ -44,14 +46,24 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	gap: 0.5vh;
+	-webkit-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 1);
 }
 .galerybox img {
 	border-radius: 20px;
 	width: 60%;
 	aspect-ratio: 16/9;
 }
+.galerybox p {
+	font-size: 0.8em;
+}
+.galerybox {
+	font-size: 1.2em;
+}
 .galeryheader {
-	height: 55px;
+	height: 48px;
 	width: 100%;
 	background-color: hsl(240, 16%, 13%);
 	-webkit-box-shadow: 0px 0px 35px 3px rgba(19, 19, 26, 1);
@@ -99,6 +111,12 @@ body {
 		grid-template-columns: 1fr;
 		grid-template-rows: unset;
 		height: fit-content;
-		gap: 3vh;
+		gap: 4vh;
+	}
+	.galerybox p {
+		font-size: 1.1rem;
+	}
+	.galerybox h3 {
+		font-size: 1.5em;
 	}
 }
