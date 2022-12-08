@@ -118,8 +118,7 @@ body {
 .boxwrap {
 	border-radius: 20px;
 	transition: 0.3s all ease-in;
-	align-self: center;
-	justify-self: center;
+	align-self: flex-start;
 }
 .boxwrap:hover {
 	transform: scale(1.2);
@@ -229,6 +228,13 @@ header {
 	.section p {
 		font-size: 4vw;
 	}
+	.boxwrap {
+		align-self: flex-end;
+	}
+	#email {
+		grid-column-start: span 2;
+		align-self: flex-start;
+	}
 }
 
 @media only screen and (max-width: 450px) {
@@ -276,6 +282,9 @@ header {
 	}
 	.boxcontent a {
 		font-size: 5vw;
+	}
+	#email {
+		grid-column-start: auto;
 	}
 }
 @media only screen and (max-width: 425px) {
