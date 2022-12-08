@@ -118,7 +118,8 @@ body {
 .boxwrap {
 	border-radius: 20px;
 	transition: 0.3s all ease-in;
-	align-self: flex-start;
+	align-self: center;
+	justify-self: center;
 }
 .boxwrap:hover {
 	transform: scale(1.2);
