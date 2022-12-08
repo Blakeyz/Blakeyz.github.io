@@ -69,12 +69,8 @@ body {
 	width: 60%;
 	aspect-ratio: 16/9;
 }
-.galerybox p {
-	font-size: 0.8em;
-	font-weight: 100;
-}
 .galerybox {
-	font-size: 1.2em;
+	font-size: 1em;
 }
 .galerybox h3 {
 	font-family: raleway;

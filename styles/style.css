@@ -78,8 +78,9 @@ body {
 }
 #section2 {
 	background: linear-gradient(
-			hsla(207, 63%, 51%, 0.74),
-			hsl(184, 100%, 24%, 0.74) 75%
+			hsla(207, 63%, 51%, 1),
+			hsl(184, 100%, 24%, 0.74) 80%,
+			hsl(184, 100%, 24%, 1) 95%
 		),
 		url(../imgs/s2bg.jpg);
 	background-position: center;
@@ -88,8 +89,9 @@ body {
 }
 #section4 {
 	background: linear-gradient(
-			hsla(184, 100%, 24%, 0.74),
-			hsla(184, 100%, 50%, 0.55)
+			hsl(184, 100%, 24%, 1),
+			hsla(184, 100%, 24%, 0.75) 30%,
+			hsla(184, 100%, 50%, 0.55) 95%
 		),
 		url(../imgs/contact.jpg);
 	background-size: cover;
