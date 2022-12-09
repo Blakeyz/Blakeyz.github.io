@@ -269,6 +269,8 @@ header {
 	#section4 {
 		grid-template-columns: 1fr;
 		gap: 5vw;
+		grid-template-rows: 1fr 1fr 1fr;
+		overflow: scroll;
 	}
 	.boxwrap {
 		height: 100%;
@@ -289,7 +291,6 @@ header {
 }
 @media only screen and (max-width: 425px) {
 	#section4 {
-		grid-template-columns: 1fr;
 		padding: 25px 55px 2rem 55px;
 	}
 }
